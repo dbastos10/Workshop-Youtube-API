@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/s_player" android:icon="@android:drawable/ic_media_play"
+            android:title="@string/title_section1" />
+        <item android:id="@+id/controls" android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/title_section2" />
+        <item android:id="@+id/playlist" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="@string/title_section3" />
+        <item android:id="@+id/y_intents" android:icon="@android:drawable/ic_media_next"
+            android:title="@string/title_section4" />
+    </group>
+
+</menu>

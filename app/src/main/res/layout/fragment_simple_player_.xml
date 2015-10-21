@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.examples.workshopyoutube.SimplePlayer_Frag">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/start_video_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="210dp"
+            android:text="@string/play_video"
+            android:layout_alignBaseline="@+id/start_playlist_button"
+            android:layout_alignBottom="@+id/start_playlist_button"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/start_playlist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="210dp"
+            android:text="@string/play_playlist"
+            android:layout_alignBaseline="@+id/start_video_list_button"
+            android:layout_alignBottom="@+id/start_video_list_button"
+            android:layout_alignLeft="@+id/start_video_button"
+            android:layout_alignStart="@+id/start_video_button" />
+
+        <Button
+            android:id="@+id/start_video_list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="210dp"
+            android:text="@string/play_video_list"
+            android:layout_alignBaseline="@+id/lightbox_checkbox"
+            android:layout_alignBottom="@+id/lightbox_checkbox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/start_index_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:inputType="number"
+            android:hint="@string/start_index"
+            android:layout_alignBaseline="@+id/lightbox_checkbox"
+            android:layout_alignBottom="@+id/lightbox_checkbox"
+            android:layout_toRightOf="@+id/start_time_text"
+            android:layout_toEndOf="@+id/start_time_text" />
+
+        <EditText
+            android:id="@+id/start_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:inputType="number"
+            android:hint="@string/start_time"
+            android:layout_alignBaseline="@+id/start_index_text"
+            android:layout_alignBottom="@+id/start_index_text"
+            android:layout_toRightOf="@+id/start_video_button"
+            android:layout_toEndOf="@+id/start_video_button" />
+
+        <CheckBox
+            android:id="@+id/autoplay_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:text="@string/autoplay"
+            android:layout_alignBaseline="@+id/start_index_text"
+            android:layout_alignBottom="@+id/start_index_text"
+            android:layout_toRightOf="@+id/start_time_text"
+            android:layout_toEndOf="@+id/start_time_text" />
+
+        <CheckBox
+            android:id="@+id/lightbox_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:text="@string/lightbox_mode"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/start_video_button"
+            android:layout_alignEnd="@+id/start_video_button" />
+    </LinearLayout>
+
+</RelativeLayout>
+
